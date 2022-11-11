@@ -1,0 +1,104 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    padding: 5rem 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include m.tablet { 
+        min-height: 70rem;
+    }
+
+    &::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        // background-color: rgb(0 0 0 / .4);
+        background-color: v.$negro;
+        opacity: .5;
+        position: absolute;
+    }
+
+    .contenido-header {
+        margin-top: 5rem;
+        position: relative;
+    }
+
+    h1 {
+        text-align: center;
+        color: v.$blanco;
+        text-transform: uppercase;
+        margin-top: 5rem;
+        @include m.tablet { 
+            margin-top: 10rem;
+        }
+    }
+    
+}
+
+// Header de cada página
+.notwebp.notavif .header-inicio {
+    background-image: url(../img/header_inicio.jpg);
+}
+.webp .header-inicio {
+    background-image: url(../img/header_inicio.webp);
+}
+.avif .header-inicio {
+    background-image: url(../img/header_inicio.avif);
+}
+
+.notwebp.notavif .header-nosotros {
+    background-image: url(../img/header_nosotros.jpg);
+}
+.webp .header-nosotros {
+    background-image: url(../img/header_nosotros.webp);
+}
+.avif .header-nosotros {
+    background-image: url(../img/header_nosotros.avif);
+}
+
+
+.notwebp.notavif .header-proceso {
+    background-image: url(../img/header_proceso.jpg);
+}
+.webp .header-proceso {
+    background-image: url(../img/header_proceso.webp);
+}
+.avif .header-proceso {
+    background-image: url(../img/header_proceso.avif);
+}
+
+
+.notwebp.notavif .header-menu {
+    background-image: url(../img/header_menu.jpg);
+}
+.webp .header-menu {
+    background-image: url(../img/header_menu.webp);
+}
+.avif .header-menu {
+    background-image: url(../img/header_menu.avif);
+}
+
+
+.notwebp.notavif .header-galeria {
+    background-image: url(../img/header_galeria.jpg);
+}
+.webp .header-galeria {
+    background-image: url(../img/header_galeria.webp);
+}
+.avif .header-galeria {
+    background-image: url(../img/header_galeria.avif);
+}
+
+.notwebp.notavif .header-contacto {
+    background-image: url(../img/header_contacto.jpg);
+}
+.webp .header-contacto {
+    background-image: url(../img/header_contacto.webp);
+}
+.avif .header-contacto {
+    background-image: url(../img/header_contacto.avif);
+}

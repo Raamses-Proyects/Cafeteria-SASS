@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.iconos {
+    margin-top: 5rem;
+
+    .listado-iconos {
+        @include m.tablet { 
+            @include m.grid(3, 2rem);
+        }
+        li {
+            margin-bottom: 3rem;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            @include m.tablet { 
+                margin-bottom: 0;
+            }
+            img {
+                margin: 0 auto;
+                width: 12rem;
+            }
+            p {
+                font-family: v.$fuenteCursiba;
+                font-size: 3.2rem;
+                color: v.$primario;
+                margin: 1rem 0;
+            }
+          }
+    }
+}
